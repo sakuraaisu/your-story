@@ -1,1 +1,2 @@
-console.log("Your Story: placeholder app");
+console.log("Your Story: placeholder app v2");
+
