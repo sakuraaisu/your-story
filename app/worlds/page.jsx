@@ -1,4 +1,6 @@
-// app/worlds/page.jsx (Server Component)
+// app/worlds/page.jsx
+export const dynamic = "force-dynamic";   // ← これを追加（または export const revalidate = 0; でもOK）
+
 import { prisma } from "../../lib/db";
 
 export default async function WorldsPage() {
