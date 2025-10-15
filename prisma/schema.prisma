@@ -1,0 +1,15 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL") // 例: file:./dev.db（Codexの環境変数で設定済み）
+}
+
+model World {
+  id        Int      @id @default(autoincrement())
+  name      String
+  createdAt DateTime @default(now())
+}
+
