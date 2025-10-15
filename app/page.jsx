@@ -1,3 +1,6 @@
+Set-Location "C:\Users\aisu1\Downloads\your-story (1)\your-story"
+
+@'
 export default function Home() {
   return (
     <main style={{ padding: 24 }}>
@@ -6,3 +9,4 @@ export default function Home() {
     </main>
   );
 }
+'@ | Set-Content -Encoding utf8 .\app\page.jsx
